@@ -1,0 +1,120 @@
+.TodoList {
+  text-align: center;
+  background-color: lightblue;
+  min-height: 500px;
+  margin: 40px auto;
+  width: 400px;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+form {
+  display: flex;
+  padding: 30px;
+}
+
+input {
+  font-size: 18px;
+  width: 200px;
+  border-radius: 5px;
+  padding: 0 20px;
+  border: 0;
+  background-color: rgb(27,112,137);
+  margin: 20px;
+  height: 50px;
+  color: white;
+}
+
+input::placeholder {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+button {
+  padding: 7px;
+  font-size: 16px;
+  margin: 10px;
+  margin-right: 0px;
+  background-color:white;
+  color: rgb(27,112,137);
+  border: 1px solid grey;
+  border-radius: 3px;
+}
+
+.item {
+  color: #333;
+  background-color: rgba(255, 255, 255, .5);
+  margin: 10px 0;
+  border-radius: 10px;
+  list-style: none;
+  text-align: left;
+  text-indent: 30 px;
+}
+
+.item li p {
+  padding: 10px;
+  position: relative;
+}
+
+.item li p span{
+  position: absolute;
+  right: 10px;
+  cursor: pointer;
+}
+
+.item li p span button{
+  font-size: 25px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding: 1px;
+}
+
+.item li p input {
+  background-color: transparent;
+  border: 0;
+  color: white;
+  font-size: 18px;
+  padding: 0 0;
+}
+
+.item li p input:focus{
+  outline: none;
+}
+
+ul {
+  padding: 0;
+  margin: auto;
+}
+
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
